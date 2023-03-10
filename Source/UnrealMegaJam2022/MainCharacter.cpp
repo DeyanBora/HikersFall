@@ -1,5 +1,3 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 
 #include "MainCharacter.h"
 #include "Animation/AnimInstance.h"
@@ -77,8 +75,6 @@ AMainCharacter::AMainCharacter()
 	HitAnimMontage1 = AnimMontage1.Object;
 	HitAnimMontage2 = AnimMontage2.Object;
 	HitAnimMontage3 = AnimMontage3.Object;
-	//HitAnimMontage4 = AnimMontage4.Object;
-
 
 	DamagingBool = false;
 }
@@ -87,7 +83,6 @@ AMainCharacter::AMainCharacter()
 void AMainCharacter::BeginPlay()
 {
 	Super::BeginPlay();
-
 }
 
 // Called every frame
@@ -215,8 +210,6 @@ void AMainCharacter::HitLeft()
 	}
 	else
 	{
-
-	
 		if (!IsRolling)
 		{
 			if (IsAttacking)
@@ -256,7 +249,7 @@ void AMainCharacter::HitLeft()
 	}
 }
 
-//Implement AnimMontage!!!
+
 void AMainCharacter::ComboAttackSave()
 {
 	if (SaveAttack)
